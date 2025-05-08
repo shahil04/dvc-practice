@@ -19,13 +19,20 @@
          ->it create data.dvc / .dvcignore 
          -> also it add in .dvc -->in md5 hash of data.dvcdata and hash 
 
-         
+
 12. Then git add-commit-push (we're saving V2 of our data at this point)
 13. Check dvc/git status, everything should be upto date.
 14. Now repeat step 10-12 for v3 of data.
 
+=== 
+Now again come back to the 1st version of data/ or any version of data  how 
+git log --all --graph --oneline
+git checkout <hash>   # for any hash 
+-git checkout master/main  # go to the main head /current time
+dvc pull
 
 
+dvc -take any types of data version do 
 ======================
 DVC commands
 ======================
